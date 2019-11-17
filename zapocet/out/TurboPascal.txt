@@ -1,0 +1,3 @@
+const prevod = Pi/180; {Prevod}
+var pocet,
+    uhol;    {pocitacony uhol}

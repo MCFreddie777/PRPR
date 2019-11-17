@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.14)
+project(Turing-Cvic1)
+
+add_executable(01_backslash src/01_backslash/01_backlash.c)
+add_executable(02_average src/02_average/02_average.c)
+add_executable(03_tax src/03_tax/03_tax.c)
+add_executable(04_bmi src/04_bmi/04_bmi.c)
+add_executable(05_ascii src/05_ascii/05_ascii.c)
+add_executable(06_reverted_ascii src/06_reverted_ascii/06_reverted_ascii.c)
+add_executable(07_volume src/07_volume/07_volume.c)
+add_executable(08_expressions src/08_expressions/08_expressions.c)
+add_executable(09_rounding src/09_rounding/09_rounding.c)

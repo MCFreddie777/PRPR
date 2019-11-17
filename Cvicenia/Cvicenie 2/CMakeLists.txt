@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.14)
+project(Turing-Cvic2)
+
+add_executable(01_minmax src/01_minmax/01_minmax.c)
+add_executable(02_correct src/02_correct/02_correct.c)
+add_executable(03_pyramid src/03_pyramid/03_pyramid.c)
+add_executable(04_star_pyramid src/04_star_pyramid/04_star_pyramid.c)
+add_executable(05_star src/05_star/05_star.c)
+add_executable(06_multiplies_of_three src/06_multiplies_of_three/06_multiplies_of_three.c)
+add_executable(07_factorial src/07_factorial/07_factorial.c)
+add_executable(08_range src/08_range/08_range.c)
+add_executable(09_chessboard src/09_chessboard/09_chessboard.c)

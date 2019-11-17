@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.14)
+project(P8.1)
+add_executable(P8.1 P8.1.c)
+add_executable(P8.2 P8.2.c)
+add_executable(P8.3 P8.3.c)
+add_executable(P8.4 P8.4.c)
+add_executable(P8.5 P8.5.c)

@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.14)
+project(Turing-Cvic5)
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(01_copy_even_to_array src/01_copy_even_to_array/01_copy_even_to_array.c)
+add_executable(02_copy_multiplic_to_array src/02_copy_multiplic_to_array/02_copy_multiplic_to_array.c)
+add_executable(03_copy_divisor_to_array src/03_copy_divisor_to_array/03_copy_divisor_to_array.c)
+add_executable(04_malloc_for_chars src/04_malloc_for_chars/04_malloc_for_chars.c)
+add_executable(05_even_odd_words src/05_even_odd_words/05_even_odd_words.c)
+add_executable(06_histogram_znakov_file src/06_histogram_znakov_file/06_histogram_znakov_file.c)
+add_executable(07_spajanie_usporiadanych_postupnosti src/07_spajanie_usporiadanych_postupnosti/07_spajanie_usporiadanych_postupnosti.c)
+add_executable(08_dlzka_retazca src/08_dlzka_retazca/08_dlzka_retazca.c)
+add_executable(09_pocet_samohlasok src/09_pocet_samohlasok/09_pocet_samohlasok.c)

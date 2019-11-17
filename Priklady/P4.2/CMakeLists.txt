@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.14)
+project(P4.2-priklady)
+add_executable(P4.15 P4.15.c)
+add_executable(P4.16 P4.16.c)
+add_executable(P4.17 P4.17.c)
+add_executable(P4.18 P4.18.c)

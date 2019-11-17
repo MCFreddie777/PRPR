@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.14)
+project(Turing-Cvic7)
+
+add_executable(01-doplnovacka src/01-doplnovacka/01-doplnovacka.c)
+add_executable(02-palindrom src/02-palindrom/02-palindrom.c)
+add_executable(03-vloz_do_stredu src/03-vloz_do_stredu/03-vloz_do_stredu.c)
+add_executable(04-odstran_male_pismena src/04-odstran_male_pismena/04-odstran_male_pismena.c)
+add_executable(05-najcastejsi_znak src/05-najcastejsi_znak/05-najcastejsi_znak.c)
+add_executable(06-postupka src/06-postupka/06-postupka.c)
+add_executable(07-vloz_do_retazca src/07-vloz_do_retazca/07-vloz_do_retazca.c src/common/string_helper.h src/common/string_helper.c)
+add_executable(08_strdelete src/08_strdelete/08_strdelete.c src/common/string_helper.h src/common/string_helper.c)
+add_executable(09_just_a_string_stuff src/09_just_a_string_stuff/09_just_a_string_stuff.c src/common/string_helper.h src/common/string_helper.c)

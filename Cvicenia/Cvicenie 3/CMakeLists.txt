@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.14)
+project(Turing-Cvic3)
+
+add_executable(01_exponentiation src/01_exponentiation/01_exponentiation.c)
+add_executable(02_multiplication src/02_multiplication/02_multiplication.c)
+add_executable(03_prime_number src/03_prime_number/03_prime_number.c)
+add_executable(04_wage src/04_wage/04_wage.c)
+add_executable(05_armstrongs_number src/05_armstrongs_number/05_armstrongs_number.c)
+add_executable(06_reverse_palindrome src/06_reverse_palindrome/06_reverse_palindrome.c)
+add_executable(07_pointers src/07_pointers/07_pointers.c)
+add_executable(test1-frantisekgic src/test1-frantisekgic/test1-frantisekgic.c)
+add_executable(bonus-frantisekgic src/test1-frantisekgic/bonus-frantisekgic.c)

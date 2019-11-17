@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.14)
+project(Turing-Cvic3)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/out)
+add_executable(01_exponentiation_file src/01_exponentiation_file/01_exponentiation_file.c)
+add_executable(02_read_write_switch src/02_read_write_switch/02_read_write_switch.c)
+add_executable(03_read_lines src/03_read_lines/03_read_lines.c)
+add_executable(03 src/03_read_lines/03.c)
+add_executable(04_read_various_characters src/04_read_various_characters/04_read_various_characters.c)
+add_executable(05_diffcheck src/05_diffcheck/05_diffcheck.c)
+add_executable(06_uprav_zlomok src/06_uprav_zlomok/06_uprav_zlomok.c)
+add_executable(07_obsah_obvod src/07_obsah_obvod/07_obsah_obvod.c)
+add_executable(08_sucet_rekurzivne src/08_sucet_rekurzivne/08_sucet_rekurzivne.c)

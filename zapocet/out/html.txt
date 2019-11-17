@@ -1,0 +1,3 @@
+<nadpis>Skola</nadpis>
+<podnadpis>Fakulta     <b>informatiky</b>     a     informacnych
+technologii</podnadpis>
