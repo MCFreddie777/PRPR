@@ -332,6 +332,80 @@ void update_item_by_city(LISTITEM **list) {
     }
 }
 
+/**
+ * Swaps values of two structs
+ *
+ * @param dst destination element
+ * @param src source element
+ */
+void swap(LISTITEM **dst, LISTITEM **src) {
+    LISTITEM *temp = (LISTITEM *) malloc(sizeof(LISTITEM));
+    alloc_list_item(&temp);
+    
+    cpy_item(&temp, *dst);
+    cpy_item(dst, *src);
+    cpy_item(src, temp);
+    
+    temp = NULL;
+    free(temp);
+}
+
+/**
+ * Sorts the linked list by value of member 'city' ascending
+ * If two values are equal, sorts it by price
+ *
+ * @param list the linked list
+ */
+void sort(LISTITEM **list) {
+    
+    if (*list == NULL) {
+        printf("Zoznam nie je mozne usporiadat\n");
+        return;
+    }
+    
+    LISTITEM *act = *list;
+    short changes = 0;
+    while (act->next) {
+        
+        LISTITEM *min = act;
+        LISTITEM *traverse = act->next;
+        
+        while (traverse) {
+            
+            /*
+             * Find minimum element from array by string
+             * If strings are equal put lowest price to minimum
+             */
+            if (
+                    (strcmp(strlwr(min->city), strlwr(traverse->city)) > 0)
+                    ||
+                    (
+                            (strcmp(strlwr(min->city), strlwr(traverse->city)) == 0)
+                            &&
+                            (
+                                    traverse->price
+                                    < min->price
+                            )
+                    )
+                    ) {
+                min = traverse;
+            }
+            traverse = traverse->next;
+        }
+        
+        // If minimum was found, swap elements
+        if (min != act) {
+            swap(&act, &min);
+            changes = 1;
+        }
+        act = act->next;
+    }
+    
+    // Print message only if at least one swap happened
+    if (changes)
+        printf("Zaznamy boli usporiadane.\n");
+}
+
 int open_file(FILE **f) {
     return (*f = fopen("../resources/reality.txt", "r")) != NULL;
 }
@@ -419,6 +493,10 @@ int main() {
             }
             case ('a'): {
                 update_item_by_city(&list);
+                break;
+            }
+            case ('u'): {
+                sort(&list);
                 break;
             }
             case ('k'): {
