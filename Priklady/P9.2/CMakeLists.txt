@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.14)
+project(9.2)
+add_executable(P9.6 P9.6.c)
+add_executable(P9.7 P9.7.c)
+add_executable(P9.8 P9.8.c)
+add_executable(P9.9 P9.9.c)
